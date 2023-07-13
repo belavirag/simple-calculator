@@ -23,6 +23,9 @@ public class Main {
             while (true) {
                 final String str = scanner.nextLine().trim();
                 if (str.length() != 1) {
+                    if (!str.isEmpty()) {
+                        System.out.println("Input too long!");
+                    }
                     continue;
                 }
                 final char firstChar = str.charAt(0);
